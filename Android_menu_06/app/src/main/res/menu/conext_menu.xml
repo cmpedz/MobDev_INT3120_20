@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!--  tạo giao diện cho menu tại đây-->
+    <!--    android:orderInCategory dùng để thiết lập thứ tự cho các items-->
+    <!--    app:showAsAction hay đi cùng với android:icon vì nó dùng để thiết lập trạng thái hiện ra của icon trogn android  -->
+    <item
+        android:icon="@drawable/ic_launcher_foreground"
+        app:showAsAction="always"
+        android:orderInCategory="1"
+        android:title="PlusItem" />
+    <item android:title="Item1"
+        android:id="@+id/item1"
+        android:orderInCategory="2"
+        app:showAsAction="withText"
+        />
+    <item android:title="Item"
+        android:id="@+id/item2"
+        android:orderInCategory="3"
+        app:showAsAction="collapseActionView">
+        <menu>
+            <item android:title="item 2.1"
+                android:id="@+id/item21"/>
+            <item android:title="item 2.2"
+                android:id="@+id/item22"/>
+        </menu>
+    </item>
+</menu>
